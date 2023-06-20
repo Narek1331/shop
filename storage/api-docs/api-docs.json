@@ -1,0 +1,19 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "DO SHOPING",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/auth/login": {
+            "get": {
+                "operationId": "3f08df9ef22526fe4a6ade56924d971f",
+                "responses": {
+                    "200": {
+                        "description": "login"
+                    }
+                }
+            }
+        }
+    }
+}
