@@ -25,7 +25,7 @@ class UserAuthController extends Controller
      * )
      */
     public function login(UserSignin $request){
-        $response = Http::asForm()->post('http://localhost/oauth/token', [
+        $response = Http::asForm()->post( env('APP_URL') . '/oauth/token', [
             'grant_type' => 'password',
             'client_id' => env('PASSPORT_CLIENT_ID'),
             'client_secret' => env('PASSPORT_CLIENT_SECRET'),
